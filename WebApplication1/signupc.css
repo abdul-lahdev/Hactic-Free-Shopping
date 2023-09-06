@@ -1,0 +1,30 @@
+﻿body {
+    background-image:url(backgroundimmage.jpg);
+}
+
+h1 {
+    background-color: red;
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.full {
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.abc, img {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}

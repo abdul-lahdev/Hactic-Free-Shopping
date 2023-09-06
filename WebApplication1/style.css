@@ -1,0 +1,434 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Setting {
+    max-width: 90rem;
+    /* background-color: red; */
+    margin: 0 auto;
+    /* padding-top: 30px; */
+}
+
+body {
+    /* background-color: black; */
+    /* color: white; */
+}
+
+.backround {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url(backgroundimmage.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+header {
+    display: grid;
+    /* margin: 10px 50px; */
+    /* justify-content: space-between;
+  align-items: center; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 120px 1fr;
+}
+
+.up {
+    grid-column: 1/-1;
+    /* grid-row: 1/-1; */
+    /* grid-row: 1/-2; */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    /* height: 100px; */
+    /* background-color: rebeccapurple; */
+}
+
+.Main-Container {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    /* height: 100px; */
+    /* display: flex; */
+    /* justify-content: center;
+gap: 15rem; */
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+.logo img {
+    width: 15rem;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+        nav ul li a:hover {
+            color: #E0FF00;
+            border-bottom: 1px solid #e3ff1a;
+        }
+
+.Main-Container img {
+    width: 800px;
+    border-radius: 15px;
+}
+
+.Main-Container h1 {
+    color: #E0FF00;
+    font-size: 7rem;
+    margin: 20px 0px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.Main-Container p {
+    font-size: 29px;
+    margin-bottom: 40px;
+}
+
+.Main-Container button {
+    background-color: #E0FF00;
+    padding: 22px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Main-Container p span {
+    background-color: red;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.Main-Container button:hover {
+    background-color: #e6ff33;
+    color: black;
+}
+
+.Latest-Products {
+    padding: 50px 20px;
+    height: 100vh;
+    /* width: 100vh; */
+    /* background-color: red; */
+}
+
+.ah {
+    color: rgb(34, 34, 34);
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    /* background-color: #e4e4e4; */
+}
+
+.product {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-img {
+    width: 39vh;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+    .product-img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+.product-1 {
+    width: 30%;
+    padding: 10px 10px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.product-h1d {
+    color: rgb(20, 20, 20);
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: rgb(24, 24, 24);
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+    .btn:hover, .btn:visited:hover, .btn:active:hover {
+        background-color: rgb(59, 59, 59);
+    }
+
+.product-p {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.Hero-section {
+    margin-top: 20px;
+    /* background-color: rgb(29, 29, 29); */
+    /* height: 100vh; */
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    margin-bottom: 50px;
+    column-gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    /* background-color: rebeccapurple; */
+    /* grid-column: 1/-1; */
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 13px;
+    }
+
+.Hero-Heading h1 {
+    /* background-color: #E0FF00; */
+    font-size: 4rem;
+    color: #1c1c1c;
+    line-height: 1.1;
+    /* margin-top: 40px; */
+}
+
+.Hero-Heading p {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.abc {
+    /* background-color: red; */
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.remove-a a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Footer */
+
+
+footer {
+    background-color: rgb(12, 12, 12);
+    /* height: 430px; */
+    padding: 10px 10px;
+    background-image: url(./img/blue.png);
+}
+
+    footer hr,
+    footer p {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        color: white;
+    }
+
+.adjustmenmt {
+    margin-top: 30px;
+    display: flex;
+    /* gap: 110px; */
+    justify-content: space-around;
+    /* width: 100%;
+  
+  padding: 40px 90px; */
+    padding: 30px 0px;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+.fb-logo {
+    font-size: 50px;
+    /* color: white; */
+    background-color: #e6ff33;
+    /* fill: white; */
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* display: block; */
+    margin-left: 10px;
+}
+
+.logo-ft {
+    display: flex;
+    /* display: block; */
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+    .logo-ft img {
+        width: 300px;
+    }
+
+.Right-Element ul,
+footer div ul li {
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.Right-Element h3,
+footer div h3 {
+    margin-bottom: 20px;
+}
+
+/* PRODUCT HTML CSS */
+.prdouct-color-setting {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+
+.product-2 {
+    width: 20%;
+    padding: 10px 10px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+/* OurTeam */
+.OurTeamImage {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+    .OurTeamImage img {
+        width: 100%;
+    }
+
+.FloorTeamMain {
+    /* background-color: red; */
+    font-size: 36px;
+    color: #2e2e2e;
+    /* text-transform: uppercase; */
+}
+
+.FloorTeamRole {
+    /* background-color: red; */
+    font-size: 21px;
+    color: #828282;
+}
+
+.Flourteamflex {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.set {
+    margin-top: 30px;
+}
+/*  */
+#hiddenParagraph{
+    display: none;
+}
+
+#showButton, #showButton1, #showButton2, #showButton3, #showButton4, #showButton5, #showButton6, #showButton7 {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 13px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+    #showButton:hover, #showButton1:hover, #showButton2:hover, #showButton3:hover, #showButton4:hover, #showButton5:hover, #showButton6:hover, #showButton7:hover {
+        background-color: rgb(99, 99, 99);
+    }
+
+.set1 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+/* WHY US */
+.Whs-main-container {
+    /* background-color: red; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-Us {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.wc-1 {
+    background-color: rgb(241, 241, 241);
+    width: 25%;
+    height: 15rem;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wc-p {
+    margin-bottom: 50px;
+}
+
+.icon-1 {
+    font-size: 50px;
+}
+
+.why-Categories {
+    display: flex;
+    gap: 15px;
+}
+
+.why-Categories1 {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
